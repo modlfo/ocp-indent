@@ -10,9 +10,9 @@ then install -m 0644 "META" "$1/lib/ocp-indent/META"
 else echo "Error: META doesn't exist"
 fi
 mkdir -p "$1/lib/ocp-indent/lib"
-if [ -e "_obuild/ocp-indent.lib/ocp-indent.lib.a" ]
-then install -m 0644 "_obuild/ocp-indent.lib/ocp-indent.lib.a" "$1/lib/ocp-indent/lib/ocp-indent.lib.a"
-else echo "Error: _obuild/ocp-indent.lib/ocp-indent.lib.a doesn't exist"
+if [ -e "_obuild/ocp-indent.lib/ocp-indent.lib.lib" ]
+then install -m 0644 "_obuild/ocp-indent.lib/ocp-indent.lib.lib" "$1/lib/ocp-indent/lib/ocp-indent.lib.lib"
+else echo "Error: _obuild/ocp-indent.lib/ocp-indent.lib.lib doesn't exist"
 fi
 if [ -e "_obuild/ocp-indent.lib/ocp-indent.lib.cma" ]
 then install -m 0644 "_obuild/ocp-indent.lib/ocp-indent.lib.cma" "$1/lib/ocp-indent/lib/ocp-indent.lib.cma"
@@ -44,9 +44,9 @@ if [ -e "_obuild/ocp-indent.lib/indentPrinter.cmti" ]
 then install -m 0644 "_obuild/ocp-indent.lib/indentPrinter.cmti" "$1/lib/ocp-indent/lib/indentPrinter.cmti"
 fi
 mkdir -p "$1/lib/ocp-indent/utils"
-if [ -e "_obuild/ocp-indent.utils/ocp-indent.utils.a" ]
-then install -m 0644 "_obuild/ocp-indent.utils/ocp-indent.utils.a" "$1/lib/ocp-indent/utils/ocp-indent.utils.a"
-else echo "Error: _obuild/ocp-indent.utils/ocp-indent.utils.a doesn't exist"
+if [ -e "_obuild/ocp-indent.utils/ocp-indent.utils.lib" ]
+then install -m 0644 "_obuild/ocp-indent.utils/ocp-indent.utils.lib" "$1/lib/ocp-indent/utils/ocp-indent.utils.lib"
+else echo "Error: _obuild/ocp-indent.utils/ocp-indent.utils.lib doesn't exist"
 fi
 if [ -e "_obuild/ocp-indent.utils/ocp-indent.utils.cma" ]
 then install -m 0644 "_obuild/ocp-indent.utils/ocp-indent.utils.cma" "$1/lib/ocp-indent/utils/ocp-indent.utils.cma"
@@ -64,9 +64,9 @@ if [ -e "_obuild/ocp-indent.utils/nstream.cmti" ]
 then install -m 0644 "_obuild/ocp-indent.utils/nstream.cmti" "$1/lib/ocp-indent/utils/nstream.cmti"
 fi
 mkdir -p "$1/lib/ocp-indent/lexer"
-if [ -e "_obuild/ocp-indent.lexer/ocp-indent.lexer.a" ]
-then install -m 0644 "_obuild/ocp-indent.lexer/ocp-indent.lexer.a" "$1/lib/ocp-indent/lexer/ocp-indent.lexer.a"
-else echo "Error: _obuild/ocp-indent.lexer/ocp-indent.lexer.a doesn't exist"
+if [ -e "_obuild/ocp-indent.lexer/ocp-indent.lexer.lib" ]
+then install -m 0644 "_obuild/ocp-indent.lexer/ocp-indent.lexer.lib" "$1/lib/ocp-indent/lexer/ocp-indent.lexer.lib"
+else echo "Error: _obuild/ocp-indent.lexer/ocp-indent.lexer.lib doesn't exist"
 fi
 if [ -e "_obuild/ocp-indent.lexer/ocp-indent.lexer.cma" ]
 then install -m 0644 "_obuild/ocp-indent.lexer/ocp-indent.lexer.cma" "$1/lib/ocp-indent/lexer/ocp-indent.lexer.cma"

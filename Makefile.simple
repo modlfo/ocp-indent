@@ -18,7 +18,7 @@ PKGS = cmdliner,findlib,dynlink
 BINS = ocp-indent.byte
 LIBS = $(LIB).cma
 ifeq ($(BEST),native)
-  LIBS += $(LIB).cmxa $(LIB).a $(LIB).cmxs
+  LIBS += $(LIB).cmxa $(LIB).lib $(LIB).cmxs
   BINS += ocp-indent.native
 endif
 
@@ -48,7 +48,7 @@ src/indentVersion.ml:
 src/approx_common.ml: src/approx_common.mli
 	cp $< $@
 
-$(LIB).cma $(LIB).cmxa $(LIB).a $(LIB).cmxs: $(GENERATED)
+$(LIB).cma $(LIB).cmxa $(LIB).lib $(LIB).cmxs: $(GENERATED)
 	$(OCAMLBUILD) -use-ocamlfind $@
 
 .PHONY: clean
